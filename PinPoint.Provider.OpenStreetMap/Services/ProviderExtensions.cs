@@ -6,7 +6,7 @@ using Microsoft.Extensions.Options;
 using PinPoint.Core.Services;
 
 
-namespace MapProvider.OpenStreetMap.Services
+namespace PinPoint.Provider.OpenStreetMap.Services
 {
     public static class ProviderExtensions
     {

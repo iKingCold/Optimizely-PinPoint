@@ -5,7 +5,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Options;
 
-namespace MapProvider.Lantmateriet.Services
+namespace PinPoint.Provider.Lantmateriet.Services
 {
     public static class ProviderExtensions
     {

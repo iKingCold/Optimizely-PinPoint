@@ -7,7 +7,7 @@ using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using System.Linq;
 
-namespace MapProvider.OpenStreetMap.Services
+namespace PinPoint.Provider.OpenStreetMap.Services
 {
     public class OsmProvider : IMapProvider
     {

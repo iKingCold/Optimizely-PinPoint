@@ -21,6 +21,6 @@
   </ItemGroup>
   
   <ItemGroup>
-    <ProjectReference Include="..\MapProvider.Lantmateriet\MapProvider.Lantmateriet.csproj" />
+    <ProjectReference Include="..\PinPoint.Provider.Lantmateriet\PinPoint.Provider.Lantmateriet.csproj" />
   </ItemGroup>
 </Project>

@@ -11,7 +11,7 @@ using MightyLittleGeodesy.Positions;
 using System.Net.Http;
 using System.Net.Http.Headers;
 
-namespace MapProvider.Lantmateriet.Services
+namespace PinPoint.Provider.Lantmateriet.Services
 {
     public class LantmaterietProvider : IMapProvider
     {
