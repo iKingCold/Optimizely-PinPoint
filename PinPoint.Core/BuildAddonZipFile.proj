@@ -3,7 +3,7 @@
 
 	<!-- Variables used in the MSBuild scripts -->
 	<PropertyGroup>
-		<PluginName>PinPoint.Core</PluginName>
+		<PluginName>PinPointCore</PluginName>
 		<SolutionDir Condition="$(SolutionDir) == ''">$(MSBuildProjectDirectory)..\</SolutionDir>
 		<TmpOutDir>$(ProjectDir)bin\addon</TmpOutDir>
 		<BinDir>$(ProjectDir)bin</BinDir>
@@ -42,7 +42,7 @@
 	<ItemGroup>
 		<None Include="$(SolutionDir)\tmp\$(PluginName).zip">
 			<Pack>True</Pack>
-			<PackagePath>contentFiles\any\any\modules\_protected\PinPoint.Core</PackagePath>
+			<PackagePath>contentFiles\any\any\modules\_protected\$(PluginName)</PackagePath>
 			<Visible>False</Visible>
 			<PackageCopyToOutput>true</PackageCopyToOutput>
 		</None>
@@ -63,11 +63,11 @@
 
 		<!-- Copy files that should be included in the Zip file -->
 		<ItemGroup>
-			<AddOnClientResources Include="$(ProjectDir)ClientResources\PinPoint.Core\**\*.*" />
+			<AddOnClientResources Include="$(ProjectDir)ClientResources\$(PluginName)\**\*.*" />
 		</ItemGroup>
 
 		<Copy SourceFiles="$(ProjectDir)module.config" DestinationFolder="$(TmpOutDir)\content" />
-		<Copy SourceFiles="@(AddOnClientResources)" DestinationFolder="$(TmpOutDir)\content\$(FileVersion)\ClientResources\PinPoint.Core\%(RecursiveDir)"/>
+		<Copy SourceFiles="@(AddOnClientResources)" DestinationFolder="$(TmpOutDir)\content\$(FileVersion)\ClientResources\$(PluginName)\%(RecursiveDir)"/>
 
 		<!-- Update the module config with the version information -->
 		<XmlPoke XmlInputPath="$(TmpOutDir)\content\module.config" Query="/module/@clientResourceRelativePath" Value="$(FileVersion)" />

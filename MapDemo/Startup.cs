@@ -7,7 +7,8 @@ using EPiServer.ServiceLocation;
 using EPiServer.Web.Hosting;
 using EPiServer.Web.Routing;
 using System.Diagnostics;
-using PinPoint.Provider.Lantmateriet.Services;
+//using PinPoint.Provider.Lantmateriet.Services;
+using PinPoint.Provider.OpenStreetMap.Services;
 
 namespace MapDemo
 {
