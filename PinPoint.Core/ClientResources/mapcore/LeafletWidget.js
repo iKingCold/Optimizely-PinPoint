@@ -9,10 +9,10 @@ define([
     "dojo/_base/event", //Handle DOM Events
     "xstyle/css!./WidgetTemplate.css", //Widget CSS
     "xstyle/css!./leaflet/leaflet.css", //Leaflet CSS
-    "PinPoint.Core/leaflet/leaflet" //Load the local Leaflet script.   
+    "pinpointcore/leaflet/leaflet" //Load the local Leaflet script.   
 ], function (_ValueRequiredMixin, on, declare, _Widget, _TemplatedMixin, _Template, query) {
 
-    return declare("PinPoint.Core.LeafletWidget", [_ValueRequiredMixin, _Widget, _TemplatedMixin], {
+    return declare("pinpointcore.LeafletWidget", [_ValueRequiredMixin, _Widget, _TemplatedMixin], {
 
         templateString: _Template, //HtmlTemplate in the Leaflet folder.
         intermediateChanges: true,

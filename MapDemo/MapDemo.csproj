@@ -18,9 +18,7 @@
   
   <ItemGroup>
     <PackageReference Include="EPiServer.CMS" Version="12.29.0" />
+    <PackageReference Include="PinPoint.Provider.OpenStreetMap" Version="1.0.0.17-preview" />
   </ItemGroup>
-  
-  <ItemGroup>
-    <ProjectReference Include="..\PinPoint.Provider.Lantmateriet\PinPoint.Provider.Lantmateriet.csproj" />
-  </ItemGroup>
+
 </Project>
