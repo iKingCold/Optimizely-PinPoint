@@ -1,6 +1,6 @@
 using Microsoft.Extensions.Options;
-using MapCore.Models;
-using MapCore.Services;
+using PinPoint.Core.Models;
+using PinPoint.Core.Services;
 using System.Threading.Tasks;
 using System.Collections.Generic;
 using Newtonsoft.Json;

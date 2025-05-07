@@ -1,7 +1,7 @@
 using System.Linq;
 using Microsoft.Extensions.Options;
-using MapCore.Models;
-using MapCore.Services;
+using PinPoint.Core.Models;
+using PinPoint.Core.Services;
 using System;
 using System.Text;
 using System.Threading.Tasks;

@@ -33,7 +33,7 @@ namespace MapDemo
 
                 services.Configure<CompositeFileProviderOptions>(c =>
                 {
-                    c.BasePathFileProviders.Add(new MappingPhysicalFileProvider($"/EPiServer/{MapCore.ServiceCollectionExtensions.Plugin}", string.Empty, Path.Combine(uiSolutionFolder, MapCore.ServiceCollectionExtensions.Plugin)));
+                    c.BasePathFileProviders.Add(new MappingPhysicalFileProvider($"/EPiServer/{PinPoint.Core.ServiceCollectionExtensions.Plugin}", string.Empty, Path.Combine(uiSolutionFolder, PinPoint.Core.ServiceCollectionExtensions.Plugin)));
                 });
 
                 services.Configure<SchedulerOptions>(options => options.Enabled = false)

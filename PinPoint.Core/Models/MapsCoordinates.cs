@@ -3,7 +3,7 @@ using EPiServer.Core;
 using EPiServer.DataAbstraction;
 using EPiServer.DataAnnotations;
 
-namespace MapCore.Models
+namespace PinPoint.Core.Models
 {
     [ContentType(
         GUID = "A92D6E39-7BF5-4EE1-80A0-DB49FC62EC29",

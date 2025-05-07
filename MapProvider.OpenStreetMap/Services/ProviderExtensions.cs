@@ -1,9 +1,9 @@
 ﻿using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using MapCore;
-using MapCore.Models;
+using PinPoint.Core;
+using PinPoint.Core.Models;
 using Microsoft.Extensions.Options;
-using MapCore.Services;
+using PinPoint.Core.Services;
 
 
 namespace MapProvider.OpenStreetMap.Services
@@ -21,7 +21,7 @@ namespace MapProvider.OpenStreetMap.Services
 
             //Get the MapSettings from appsettings and register the Map service
             var settings = config.GetSection("MapSettings").Get<MapSettings>();
-            services.AddEditorMapCore(settings);
+            services.AddPinPointCore(settings);
 
             return services;
         }

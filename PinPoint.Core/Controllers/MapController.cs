@@ -1,15 +1,15 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Options;
-using MapCore.Models;
-using MapCore.Services;
+using PinPoint.Core.Models;
+using PinPoint.Core.Services;
 using System.Net.Http.Headers;
 using System.Web;
 using System.Net.Http;
 using System.Threading.Tasks;
 using System;
 
-namespace MapCore.Controllers
+namespace PinPoint.Core.Controllers
 {
     public class MapController : Controller
     {

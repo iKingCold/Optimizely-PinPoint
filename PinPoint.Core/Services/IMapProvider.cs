@@ -1,8 +1,8 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using MapCore.Models;
+using PinPoint.Core.Models;
 
-namespace MapCore.Services
+namespace PinPoint.Core.Services
 {
     public interface IMapProvider
     {

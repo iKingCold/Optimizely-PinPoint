@@ -1,4 +1,4 @@
-namespace MapCore.Models
+namespace PinPoint.Core.Models
 {
     public class MapSettings
     {

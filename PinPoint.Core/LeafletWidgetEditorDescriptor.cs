@@ -2,9 +2,9 @@ using System;
 using System.Collections.Generic;
 using EPiServer.Shell.ObjectEditing;
 using EPiServer.Shell.ObjectEditing.EditorDescriptors;
-using MapCore.Models;
+using PinPoint.Core.Models;
 
-namespace MapCore
+namespace PinPoint.Core
 {
     [EditorDescriptorRegistration(TargetType = typeof(MapsCoordinates), EditorDescriptorBehavior = EditorDescriptorBehavior.Default)]
     [EditorDescriptorRegistration(TargetType = typeof(RequiredMapsCoordinates), EditorDescriptorBehavior = EditorDescriptorBehavior.Default)]
@@ -21,7 +21,7 @@ namespace MapCore
 
         public override void ModifyMetadata(ExtendedMetadata metadata, IEnumerable<Attribute> attributes)
         {
-            ClientEditingClass = "mapcore/LeafletWidget";
+            ClientEditingClass = "PinPoint.Core/LeafletWidget";
 
             metadata.EditorConfiguration.Add("baseUrl", BaseUrl);
             metadata.EditorConfiguration.Add("searchPrefix", SearchPrefix);

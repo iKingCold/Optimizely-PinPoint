@@ -2,9 +2,9 @@ using System;
 using System.Linq;
 using Microsoft.Extensions.DependencyInjection;
 using EPiServer.Shell.Modules;
-using MapCore.Models;
+using PinPoint.Core.Models;
 
-namespace MapCore
+namespace PinPoint.Core
 {
     /// <summary>
     /// Provides extension method for adding a flexible maps editor to an Optimizely website.
@@ -30,7 +30,7 @@ namespace MapCore
         public static int MinZoom { get; set; }
         public static string? MapProviderName { get; set; }
 
-        public const string Plugin = "MapCore";
+        public const string Plugin = "PinPoint.Core";
 
         /// <summary>
         /// Enables the Open Maps Editor
@@ -51,7 +51,7 @@ namespace MapCore
         /// <param name="minZoom">Minimum zoom restriction for the map</param>
         /// <param name="mapProviderName">Name of the map provider will be displayed in the bottom right of the map</param>
         /// <param name="services"></param>
-        public static IServiceCollection AddEditorMapCore(this IServiceCollection services, MapSettings mapSettings)
+        public static IServiceCollection AddPinPointCore(this IServiceCollection services, MapSettings mapSettings)
         {
             BaseUrl = mapSettings.BaseUrl;
             ApiTileUrl = mapSettings.ApiTileUrl;

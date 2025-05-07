@@ -1,4 +1,4 @@
-﻿using MapCore.Models;
+﻿using PinPoint.Core.Models;
 using System.ComponentModel.DataAnnotations;
 
 namespace MapDemo.Models.Pages

@@ -1,6 +1,6 @@
-﻿using MapCore;
-using MapCore.Models;
-using MapCore.Services;
+﻿using PinPoint.Core;
+using PinPoint.Core.Models;
+using PinPoint.Core.Services;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Options;
@@ -20,7 +20,7 @@ namespace MapProvider.Lantmateriet.Services
 
             //Get the MapSettings from appsettings and register the Map service
             MapSettings settings = config.GetSection("MapSettings").Get<MapSettings>();
-            services.AddEditorMapCore(settings);
+            services.AddPinPointCore(settings);
 
             return services;
         }

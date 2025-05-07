@@ -43,7 +43,7 @@
 	</ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\MapCore\MapCore.csproj" />
+    <ProjectReference Include="..\PinPoint.Core\PinPoint.Core.csproj" />
   </ItemGroup>
   
 </Project>
