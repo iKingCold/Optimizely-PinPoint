@@ -3,22 +3,43 @@
 	<!-- Properties affecting NuGet package, i.e. equivalents of .nuspec properties -->
 	<PropertyGroup>
 		<TargetFrameworks>net6.0</TargetFrameworks>
+		<ImplicitUsings>disable</ImplicitUsings>
+		<OutputType>Library</OutputType>
+		<GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+		<FileVersion>1.0.2</FileVersion>
+
+		<InformationalVersion>Optimizely CMS 12</InformationalVersion>
+		<Title>PinPoint for Optimizely, Map-data Provider</Title>
+		<Description>Map-data provider for PinPoint editor map widget for Optimizely CMS. This
+			package uses OpenStreetMap for it's map-data.</Description>
+		<GeneratePackageOnBuild>False</GeneratePackageOnBuild>
+		<Nullable>enable</Nullable>
+	</PropertyGroup>
+
+	<!-- Properties affecting NuGet package, i.e. equivalents of .nuspec properties -->
+	<PropertyGroup>
 		<Product>$(Title)</Product>
 		<PackageDescription>$(Description)</PackageDescription>
-		<FileVersion>1.0.2</FileVersion>
+		<PackageTags>maps;coordinates;api;leaflet;optimizely;episerver;openstreetmap;mapdata</PackageTags>
+
+		<PackageId>PinPoint.Provider.OpenStreetMap</PackageId>
 		<Version>$(FileVersion)</Version>
 		<PackageVersion>$(FileVersion)</PackageVersion>
-		<!-- Append "-name-of-pre-release" to build prerelease version of packages, e.g. "$(FileVersion)-newfeature" -->
-		<PackageId>PinPoint.Provider.OpenStreetMap</PackageId>
+
 		<Authors>AxelCalas, simon-s-99, BrogrenAnna</Authors>
 		<Copyright>© Precio Fishbone AB</Copyright>
+
 		<PackageProjectUrl>https://github.com/iKingCold/Optimizely-PinPoint</PackageProjectUrl>
-		<PackageLicenseFile>LICENSE</PackageLicenseFile>
-		<PackageIcon>icon.png</PackageIcon>
-		<PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
-		<PackageReadmeFile>readme.md</PackageReadmeFile>
-		<PackageTags>maps;coordinates;api;leaflet;optimizely</PackageTags>
 		<RepositoryUrl>https://github.com/iKingCold/Optimizely-PinPoint</RepositoryUrl>
+
+		<PackageIcon>icon.png</PackageIcon>
+		<PackageReadmeFile>readme.md</PackageReadmeFile>
+		<PackageLicenseFile>LICENSE</PackageLicenseFile>
+		<PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
+	</PropertyGroup>
+
+	<!-- Build NuGet package for release builds -->
+	<PropertyGroup Condition="'$(Configuration)' == 'Release'">
 		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
 		<PackageOutputPath>bin\Release</PackageOutputPath>
 	</PropertyGroup>
@@ -37,9 +58,9 @@
 			<Pack>True</Pack>
 			<PackagePath>buildTransitive\net6.0</PackagePath>
 		</None>
-		<None Include="..\Pictures\icon.png" Pack="true" PackagePath=""/>
+		<None Include="..\Pictures\icon.png" Pack="true" PackagePath="" />
 	</ItemGroup>
-	
+
 	<ItemGroup>
 		<ProjectReference Include="..\MapCore\MapCore.csproj" />
 	</ItemGroup>
