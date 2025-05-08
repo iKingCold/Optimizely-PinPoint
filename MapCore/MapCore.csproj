@@ -10,7 +10,7 @@
 		<FileVersion>1.0.2</FileVersion>
 		<InformationalVersion>Optimizely CMS 12</InformationalVersion>
 		<Title>PinPoint for Optimizely</Title>
-		<Description>A flexible editor map widget for Optimizely CMS with support for different map APIs such as OpenStreetMaps &amp; The Swedish national land survey (Lantmäteriet).</Description>
+		<Description>A flexible editor map widget for Optimizely CMS with support for different map APIs such as OpenStreetMaps &amp; The Swedish national land survey (Lantmäteriet). | Note: Do NOT install this package on it's own, it is useless without a PinPoint.Provider.* package to provide it with map-data. Instead you should install a PinPoint.Provider.* package (they install this package as a dependency).</Description>
 		<GeneratePackageOnBuild>False</GeneratePackageOnBuild>
 		<Nullable>enable</Nullable>
 	</PropertyGroup>
@@ -24,13 +24,13 @@
 		<PackageId>PinPoint.Core</PackageId>
 		<Authors>AxelCalas, simon-s-99, BrogrenAnna</Authors>
 		<Copyright>© Precio Fishbone AB</Copyright>
-    <PackageProjectUrl>https://github.com/iKingCold/Optimizely-PinPoint</PackageProjectUrl>
-    <RepositoryUrl>https://github.com/iKingCold/Optimizely-PinPoint</RepositoryUrl>
+		<PackageProjectUrl>https://github.com/iKingCold/Optimizely-PinPoint</PackageProjectUrl>
+		<RepositoryUrl>https://github.com/iKingCold/Optimizely-PinPoint</RepositoryUrl>
 		<PackageLicenseFile>LICENSE</PackageLicenseFile>
 		<PackageIcon>icon.png</PackageIcon>
 		<PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
 		<PackageReadmeFile>readme.md</PackageReadmeFile>
-		<PackageTags>maps;coordinates;api;leaflet;optimizely</PackageTags>
+		<PackageTags>maps;coordinates;api;leaflet;optimizely;episerver</PackageTags>
 	</PropertyGroup>
 
 	<!-- Build NuGet package for release builds -->
@@ -40,7 +40,8 @@
 	</PropertyGroup>
 
 	<!-- Delete existing NuGet package files -->
-	<Target Name="DeleteDebugSymbolFile" BeforeTargets="DispatchToInnerBuilds" Condition="'$(Configuration)' == 'Release'">
+	<Target Name="DeleteDebugSymbolFile" BeforeTargets="DispatchToInnerBuilds"
+		Condition="'$(Configuration)' == 'Release'">
 		<Message Text="Deleting existing NuGet packages..." Importance="high" />
 		<ItemGroup>
 			<NuGetPackageFiles Include="bin/Release/*.nupkg" />
@@ -63,7 +64,7 @@
 			<PackagePath>build\net6.0</PackagePath>
 		</None>
 		<None Include="BuildAddonZipFile.proj" />
-		<None Include="..\Pictures\icon.png" Pack="true" PackagePath=""/>
+		<None Include="..\Pictures\icon.png" Pack="true" PackagePath="" />
 	</ItemGroup>
 	<ItemGroup>
 		<PackageReference Include="EPiServer.CMS.UI.Core" Version="12.29.0" />
