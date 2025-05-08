@@ -113,7 +113,14 @@ define([
             address = this._appendPrefix(address);
 
             fetch(`${this.baseUrl}/SearchAutoComplete?address=${encodeURIComponent(address)}`)
-                .then(response => response.json())
+                .then(response => {
+                    if (response.status === 200) { //Backend found results
+                        return response.json();
+                    }
+                    else { //No results found or error in API-call, return empty array.
+                        return [];
+                    }
+                })
                 .then(data => {
                     this._updateDropdown(data); //Features contains a list of results.
                 });
@@ -129,8 +136,17 @@ define([
 
             //No results found
             if (results.length === 0) {
+                let textContent;
+                const userLang = navigator.language || navigator.userLanguage || 'en';
+
+                if (userLang && userLang.startsWith('sv')) {
+                    textContent = "Hittar inga adresser för angivet sökord";
+                } else {
+                    textContent = "No results found";
+                }
+
                 const li = document.createElement("li");
-                li.textContent = "Hittar inga adresser för angivet sökord";
+                li.textContent = textContent;
                 this.resultDropdown.appendChild(li);
                 return;
             }
