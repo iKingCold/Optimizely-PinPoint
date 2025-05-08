@@ -26,6 +26,7 @@
 		<Copyright>© Precio Fishbone AB</Copyright>
 		<RepositoryUrl>https://github.com/iKingCold/Optimizely-PinPoint</RepositoryUrl>
 		<PackageLicenseFile>LICENSE</PackageLicenseFile>
+		<PackageIcon>icon.png</PackageIcon>
 		<PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
 		<PackageReadmeFile>readme.md</PackageReadmeFile>
 		<PackageTags>maps;coordinates;api;leaflet;optimizely</PackageTags>
@@ -61,14 +62,7 @@
 			<PackagePath>build\net6.0</PackagePath>
 		</None>
 		<None Include="BuildAddonZipFile.proj" />
-		<!--<None Include="GoogleMapsEditor.targets">
-			<Pack>True</Pack>
-			<PackagePath>build\net7.0</PackagePath>
-		</None>
-		<None Include="GoogleMapsEditor.targets">
-			<Pack>True</Pack>
-			<PackagePath>build\net8.0</PackagePath>
-		</None>-->
+		<None Include="images\icon.png" Pack="true" PackagePath=""/>
 	</ItemGroup>
 	<ItemGroup>
 		<PackageReference Include="EPiServer.CMS.UI.Core" Version="12.29.0" />
