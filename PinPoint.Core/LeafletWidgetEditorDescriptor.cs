@@ -21,7 +21,7 @@ namespace PinPoint.Core
 
         public override void ModifyMetadata(ExtendedMetadata metadata, IEnumerable<Attribute> attributes)
         {
-            ClientEditingClass = "PinPoint.Core/LeafletWidget";
+            ClientEditingClass = "pinpointcore/LeafletWidget";
 
             metadata.EditorConfiguration.Add("baseUrl", BaseUrl);
             metadata.EditorConfiguration.Add("searchPrefix", SearchPrefix);

@@ -17,8 +17,16 @@
   </ItemGroup>
   
   <ItemGroup>
+    <None Remove="C:\Users\simon\.nuget\packages\pinpoint.core\1.0.0.28-alpha\contentFiles\any\any\modules\_protected\PinPointCore\PinPointCore.zip" />
+    <None Remove="C:\Users\simon\.nuget\packages\pinpoint.core\1.0.0.29-alpha\contentFiles\any\any\modules\_protected\PinPointCore\PinPointCore.zip" />
+  </ItemGroup>
+  
+  <ItemGroup>
     <PackageReference Include="EPiServer.CMS" Version="12.29.0" />
-    <PackageReference Include="PinPoint.Provider.OpenStreetMap" Version="1.0.0.17-preview" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <ProjectReference Include="..\PinPoint.Provider.OpenStreetMap\PinPoint.Provider.OpenStreetMap.csproj" />
   </ItemGroup>
 
 </Project>
