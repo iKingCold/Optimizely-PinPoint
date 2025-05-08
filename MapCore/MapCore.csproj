@@ -7,7 +7,7 @@
 		<ImplicitUsings>disable</ImplicitUsings>
 		<OutputType>Library</OutputType>
 		<GenerateAssemblyInfo>false</GenerateAssemblyInfo>
-		<FileVersion>1.0.2</FileVersion>
+		<FileVersion>1.0.3</FileVersion>
 		<InformationalVersion>Optimizely CMS 12</InformationalVersion>
 		<Title>PinPoint for Optimizely</Title>
 		<Description>A flexible editor map widget for Optimizely CMS with support for different map APIs such as OpenStreetMaps &amp; The Swedish national land survey (Lantmäteriet). | Note: Do NOT install this package on it's own, it is useless without a PinPoint.Provider.* package to provide it with map-data. Instead you should install a PinPoint.Provider.* package (they install this package as a dependency).</Description>
