@@ -7,7 +7,7 @@
 		<ImplicitUsings>disable</ImplicitUsings>
 		<OutputType>Library</OutputType>
 		<GenerateAssemblyInfo>false</GenerateAssemblyInfo>
-		<FileVersion>1.0.0.0</FileVersion>
+		<FileVersion>1.0.2</FileVersion>
 		<InformationalVersion>Optimizely CMS 12</InformationalVersion>
 		<Title>PinPoint for Optimizely</Title>
 		<Description>A flexible editor map widget for Optimizely CMS with support for different map APIs such as OpenStreetMaps &amp; The Swedish national land survey (Lantmäteriet).</Description>
@@ -63,7 +63,7 @@
 			<PackagePath>build\net6.0</PackagePath>
 		</None>
 		<None Include="BuildAddonZipFile.proj" />
-		<None Include="images\icon.png" Pack="true" PackagePath=""/>
+		<None Include="..\Pictures\icon.png" Pack="true" PackagePath=""/>
 	</ItemGroup>
 	<ItemGroup>
 		<PackageReference Include="EPiServer.CMS.UI.Core" Version="12.29.0" />
