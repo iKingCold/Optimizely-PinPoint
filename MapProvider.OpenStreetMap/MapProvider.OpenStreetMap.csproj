@@ -12,7 +12,7 @@
 		<PackageId>PinPoint.Provider.OpenStreetMap</PackageId>
 		<Authors>AxelCalas, simon-s-99, BrogrenAnna</Authors>
 		<Copyright>© Precio Fishbone AB</Copyright>
-		<PackageProjectUrl>https://github.com/iKingCold/optimizely-maps-editor/</PackageProjectUrl>
+		<PackageProjectUrl>https://github.com/iKingCold/Optimizely-PinPoint</PackageProjectUrl>
 		<PackageLicenseFile>LICENSE</PackageLicenseFile>
 		<PackageIcon>icon.png</PackageIcon>
 		<PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
