@@ -7,7 +7,7 @@
 		<ImplicitUsings>disable</ImplicitUsings>
 		<OutputType>Library</OutputType>
 		<GenerateAssemblyInfo>false</GenerateAssemblyInfo>
-		<FileVersion>1.0.0.24-alpha</FileVersion>
+		<FileVersion>1.0.0.25-alpha</FileVersion>
 		<InformationalVersion>Optimizely CMS 12</InformationalVersion>
 		<Title>Open Maps Editor for Optimizely</Title>
 		<Description>A flexible editor map widget for Optimizely CMS with support for different map APIs such as OpenStreetMaps &amp; The Swedish national land survey (Lantmäteriet).</Description>
@@ -21,7 +21,7 @@
 		<PackageDescription>$(Description)</PackageDescription>
 		<Version>$(FileVersion)</Version>
 		<PackageVersion>$(FileVersion)</PackageVersion>
-		<PackageId>$(AssemblyName)</PackageId>
+		<PackageId>PinPoint.Core</PackageId>
 		<Authors>AxelCalas, simon-s-99, BrogrenAnna</Authors>
 		<Copyright>© Precio Fishbone AB</Copyright>
 		<PackageProjectUrl>https://github.com/iKingCold/optimizely-maps-editor/</PackageProjectUrl>

@@ -5,11 +5,11 @@
     <TargetFrameworks>net6.0</TargetFrameworks>
 		<Product>$(Title)</Product>
 		<PackageDescription>$(Description)</PackageDescription>
-    <FileVersion>1.0.0.17-preview</FileVersion>
+		<FileVersion>1.0.0.25-alpha</FileVersion>
 		<Version>$(FileVersion)</Version>
 		<PackageVersion>$(FileVersion)</PackageVersion>
     <!-- Append "-name-of-pre-release" to build prerelease version of packages, e.g. "$(FileVersion)-newfeature" -->
-		<PackageId>$(AssemblyName)</PackageId>
+		<PackageId>PinPoint.Provider.OpenStreetMap</PackageId>
 		<Authors>AxelCalas, simon-s-99, BrogrenAnna</Authors>
 		<Copyright>© Precio Fishbone AB</Copyright>
 		<PackageProjectUrl>https://github.com/iKingCold/optimizely-maps-editor/</PackageProjectUrl>
