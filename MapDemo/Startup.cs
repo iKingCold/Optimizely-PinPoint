@@ -7,7 +7,8 @@ using EPiServer.ServiceLocation;
 using EPiServer.Web.Hosting;
 using EPiServer.Web.Routing;
 using System.Diagnostics;
-using MapProvider.Lantmateriet.Services;
+//using MapProvider.Lantmateriet.Services;
+using MapProvider.OpenStreetMap.Services;
 
 namespace MapDemo
 {

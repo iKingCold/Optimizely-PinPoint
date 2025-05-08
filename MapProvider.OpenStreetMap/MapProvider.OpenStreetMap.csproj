@@ -2,43 +2,43 @@
 
 	<!-- Properties affecting NuGet package, i.e. equivalents of .nuspec properties -->
 	<PropertyGroup>
-    <TargetFrameworks>net6.0</TargetFrameworks>
+		<TargetFrameworks>net6.0</TargetFrameworks>
 		<Product>$(Title)</Product>
 		<PackageDescription>$(Description)</PackageDescription>
-    <FileVersion>1.0.0.17-preview</FileVersion>
+		<FileVersion>1.0.0.0</FileVersion>
 		<Version>$(FileVersion)</Version>
 		<PackageVersion>$(FileVersion)</PackageVersion>
-    <!-- Append "-name-of-pre-release" to build prerelease version of packages, e.g. "$(FileVersion)-newfeature" -->
-		<PackageId>$(AssemblyName)</PackageId>
+		<!-- Append "-name-of-pre-release" to build prerelease version of packages, e.g. "$(FileVersion)-newfeature" -->
+		<PackageId>PinPoint.Provider.OpenStreetMap</PackageId>
 		<Authors>AxelCalas, simon-s-99, BrogrenAnna</Authors>
 		<Copyright>© Precio Fishbone AB</Copyright>
 		<PackageProjectUrl>https://github.com/iKingCold/optimizely-maps-editor/</PackageProjectUrl>
-    <PackageLicenseFile>LICENSE</PackageLicenseFile>
-    <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
+		<PackageLicenseFile>LICENSE</PackageLicenseFile>
+		<PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
 		<PackageReadmeFile>readme.md</PackageReadmeFile>
 		<PackageTags>maps;coordinates;api;leaflet;optimizely</PackageTags>
-		<RepositoryUrl>https://github.com/iKingCold/optimizely-maps-editor/</RepositoryUrl>
-    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-    <PackageOutputPath>bin\Release</PackageOutputPath>
+		<RepositoryUrl>https://github.com/iKingCold/Optimizely-PinPoint</RepositoryUrl>
+		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+		<PackageOutputPath>bin\Release</PackageOutputPath>
 	</PropertyGroup>
 
 	<!-- Include the license, readme files, and build targets in the NuGet package -->
 	<ItemGroup>
-    <None Include="..\LICENSE">
-      <Pack>True</Pack>
-      <PackagePath></PackagePath>
-    </None>
+		<None Include="..\LICENSE">
+			<Pack>True</Pack>
+			<PackagePath></PackagePath>
+		</None>
 		<None Include="..\README.md">
 			<Pack>True</Pack>
 			<PackagePath></PackagePath>
 		</None>
-    <None Include="buildTransitive\MapProvider.OpenStreetMap.props">
+    <None Include="buildTransitive\PinPoint.Provider.OpenStreetMap.props">
       <Pack>True</Pack>
       <PackagePath>buildTransitive\net6.0</PackagePath>
     </None>
 	</ItemGroup>
 	<ItemGroup>
-	  <ProjectReference Include="..\MapCore\MapCore.csproj" />
+		<ProjectReference Include="..\MapCore\MapCore.csproj" />
 	</ItemGroup>
-  
+
 </Project>

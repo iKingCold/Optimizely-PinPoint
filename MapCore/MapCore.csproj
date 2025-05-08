@@ -7,9 +7,9 @@
 		<ImplicitUsings>disable</ImplicitUsings>
 		<OutputType>Library</OutputType>
 		<GenerateAssemblyInfo>false</GenerateAssemblyInfo>
-		<FileVersion>1.0.0.24-alpha</FileVersion>
+		<FileVersion>1.0.0.0</FileVersion>
 		<InformationalVersion>Optimizely CMS 12</InformationalVersion>
-		<Title>Open Maps Editor for Optimizely</Title>
+		<Title>PinPoint for Optimizely</Title>
 		<Description>A flexible editor map widget for Optimizely CMS with support for different map APIs such as OpenStreetMaps &amp; The Swedish national land survey (Lantmäteriet).</Description>
 		<GeneratePackageOnBuild>False</GeneratePackageOnBuild>
 		<Nullable>enable</Nullable>
@@ -21,12 +21,12 @@
 		<PackageDescription>$(Description)</PackageDescription>
 		<Version>$(FileVersion)</Version>
 		<PackageVersion>$(FileVersion)</PackageVersion>
-		<PackageId>$(AssemblyName)</PackageId>
+		<PackageId>PinPoint.Core</PackageId>
 		<Authors>AxelCalas, simon-s-99, BrogrenAnna</Authors>
 		<Copyright>© Precio Fishbone AB</Copyright>
-		<PackageProjectUrl>https://github.com/iKingCold/optimizely-maps-editor/</PackageProjectUrl>
-    <PackageLicenseFile>LICENSE</PackageLicenseFile>
-    <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
+		<RepositoryUrl>https://github.com/iKingCold/Optimizely-PinPoint</RepositoryUrl>
+		<PackageLicenseFile>LICENSE</PackageLicenseFile>
+		<PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
 		<PackageReadmeFile>readme.md</PackageReadmeFile>
 		<PackageTags>maps;coordinates;api;leaflet;optimizely</PackageTags>
 	</PropertyGroup>
@@ -48,18 +48,18 @@
 
 	<!-- Include the license, readme files, and build targets in the NuGet package -->
 	<ItemGroup>
-    <None Include="..\LICENSE">
-      <Pack>True</Pack>
-      <PackagePath></PackagePath>
-    </None>
+		<None Include="..\LICENSE">
+			<Pack>True</Pack>
+			<PackagePath></PackagePath>
+		</None>
 		<None Include="..\README.md">
 			<Pack>True</Pack>
 			<PackagePath></PackagePath>
 		</None>
-    <None Include="MapCore.targets">
-      <Pack>True</Pack>
-      <PackagePath>build\net6.0</PackagePath>
-    </None>
+		<None Include="MapCore.targets">
+			<Pack>True</Pack>
+			<PackagePath>build\net6.0</PackagePath>
+		</None>
 		<None Include="BuildAddonZipFile.proj" />
 		<!--<None Include="GoogleMapsEditor.targets">
 			<Pack>True</Pack>
@@ -71,6 +71,6 @@
 		</None>-->
 	</ItemGroup>
 	<ItemGroup>
-	  <PackageReference Include="EPiServer.CMS.UI.Core" Version="12.29.0" />
+		<PackageReference Include="EPiServer.CMS.UI.Core" Version="12.29.0" />
 	</ItemGroup>
 </Project>
