@@ -10,8 +10,7 @@
 
 		<InformationalVersion>Optimizely CMS 12</InformationalVersion>
 		<Title>PinPoint for Optimizely, Map-data Provider</Title>
-		<Description>Map-data provider for PinPoint editor map widget for Optimizely CMS. This
-			package uses OpenStreetMap for it's map-data.</Description>
+		<Description>Map-data provider for PinPoint editor map widget for Optimizely CMS. This package uses OpenStreetMap for it's map-data.</Description>
 		<GeneratePackageOnBuild>False</GeneratePackageOnBuild>
 		<Nullable>enable</Nullable>
 	</PropertyGroup>
