@@ -32,7 +32,7 @@ namespace MapCore.Controllers
             {
                 try
                 {
-                    httpClient.DefaultRequestHeaders.UserAgent.ParseAdd("OpenMapsEditor/1.0"); //OSM requires a user-agent
+                    httpClient.DefaultRequestHeaders.UserAgent.ParseAdd("PinPoint/1.0"); //OSM requires a user-agent
 
                     if (_mapProvider.RequiresAuthentication)
                     {
@@ -79,7 +79,7 @@ namespace MapCore.Controllers
             {
                 try
                 {
-                    httpClient.DefaultRequestHeaders.UserAgent.ParseAdd("OpenMapsEditor/1.0"); //OSM requires a user-agent
+                    httpClient.DefaultRequestHeaders.UserAgent.ParseAdd("PinPoint/1.0"); //OSM requires a user-agent
 
                     if (_mapProvider.RequiresAuthentication)
                     {
@@ -130,7 +130,7 @@ namespace MapCore.Controllers
             {
                 try
                 {
-                    httpClient.DefaultRequestHeaders.UserAgent.ParseAdd("OpenMapsEditor/1.0"); //OSM requires a user-agent
+                    httpClient.DefaultRequestHeaders.UserAgent.ParseAdd("PinPoint/1.0"); //OSM requires a user-agent
 
                     if (_mapProvider.RequiresAuthentication)
                     {

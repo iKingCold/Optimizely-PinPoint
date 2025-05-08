@@ -33,7 +33,7 @@ namespace MapCore
         public const string Plugin = "MapCore";
 
         /// <summary>
-        /// Enables the Open Maps Editor
+        /// Enables the PinPoint Editor widget
         /// </summary>
         /// <param name="baseUrl">Base URL for localhost</param>
         /// <param name="apiTileUrl">API Url for fetching map tiles</param>
