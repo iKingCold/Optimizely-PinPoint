@@ -1,6 +1,5 @@
 # PinPoint for Optimizely
-Editor for setting coordinates in Optimizely CMS through map of choice with Leaflet.js.<br/>
-The editor uses OpenStreetMap by default. 
+Map widget for setting coordinates in Optimizely CMS through map of choice with Leaflet.js.<br/>
 
 ## Pictures
 <div>
@@ -12,7 +11,7 @@ The editor uses OpenStreetMap by default.
 The solution consists of 3 different project types.<br/>
 `MapCore` contains shared logic between providers and Core Map files required to render the Leaflet map<br/>
 `MapProvider.*provider*` contains a ProviderService that implements provider-specific settings.<br/>
-`MapDemo` contains a demo website for testing the Map Editor.<br/>
+`MapDemo` contains a demo website for testing the Map Widget.<br/>
 
 The project has been tested with **Optimizely Alloy**, **Optimizely Decoupled MusicFestival** & **Optimizely Empty Project**.
 MusicFestival is a sample project that uses the Content Delivery API in a headless CMS structure. https://github.com/episerver/musicfestival-vue-template
@@ -37,3 +36,11 @@ MusicFestival is a sample project that uses the Content Delivery API in a headle
 
 # Contributing
 Thanks for your interest in contributing! There are many ways to contribute to this project. Get started [here](./CONTRIBUTING.md).
+
+# Special thanks
+[Ted&Gustaf](https://github.com/tedgustaf) for providing [GoogleMapsEditor](https://github.com/tedgustaf/optimizely-google-maps-editor/) which has inspired this project.<br/>
+[Leaflet](https://leafletjs.com/) for providing the Leaflet map library.<br/>
+[OpenStreetMap](https://www.openstreetmap.org/) for providing free and reliable map data.<br/>
+[MightyLittleGeodesy](https://github.com/bjornsallarp/MightyLittleGeodesy) for providing an open source library to convert coordinate systems.<br/>
+</br>
+All of these projects are outstanding in their own right and have greatly contributed to the development of this project.
