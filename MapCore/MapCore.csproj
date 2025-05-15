@@ -67,6 +67,6 @@
 		<None Include="..\Pictures\icon.png" Pack="true" PackagePath="" />
 	</ItemGroup>
 	<ItemGroup>
-		<PackageReference Include="EPiServer.CMS.UI.Core" Version="12.*" />
+		<PackageReference Include="EPiServer.CMS.UI.Core" Version="[12,13)" />
 	</ItemGroup>
 </Project>
