@@ -57,4 +57,4 @@ public class Startup
 ```
 
 ## Feedback
-If you have any feedback or suggestions, please create an issue in the [Github repository](https://github.com/preciofishbone/Optimizely-PinPoint).
+If you have any feedback, suggestions or contributions, please create an issue in the [Github repository](https://github.com/preciofishbone/Optimizely-PinPoint).
