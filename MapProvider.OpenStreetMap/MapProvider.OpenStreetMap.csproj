@@ -6,11 +6,11 @@
 		<ImplicitUsings>disable</ImplicitUsings>
 		<OutputType>Library</OutputType>
 		<GenerateAssemblyInfo>false</GenerateAssemblyInfo>
-		<FileVersion>1.0.3</FileVersion>
+		<FileVersion>1.0.4</FileVersion>
 
 		<InformationalVersion>Optimizely CMS 12</InformationalVersion>
 		<Title>PinPoint for Optimizely, Map-data Provider</Title>
-		<Description>Map-data provider for PinPoint editor map widget for Optimizely CMS. This package uses OpenStreetMap for it's map-data.</Description>
+		<Description>Map-data provider for PinPoint editor map widget for Optimizely CMS. This package uses OpenStreetMap for its map-data.</Description>
 		<GeneratePackageOnBuild>False</GeneratePackageOnBuild>
 		<Nullable>enable</Nullable>
 	</PropertyGroup>
@@ -32,7 +32,7 @@
 		<RepositoryUrl>https://github.com/iKingCold/Optimizely-PinPoint</RepositoryUrl>
 
 		<PackageIcon>icon.png</PackageIcon>
-		<PackageReadmeFile>readme.md</PackageReadmeFile>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
 		<PackageLicenseFile>LICENSE</PackageLicenseFile>
 		<PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
 	</PropertyGroup>
@@ -49,7 +49,7 @@
 			<Pack>True</Pack>
 			<PackagePath></PackagePath>
 		</None>
-		<None Include="..\README.md">
+		<None Include="README.md">
 			<Pack>True</Pack>
 			<PackagePath></PackagePath>
 		</None>
