@@ -36,3 +36,10 @@ MusicFestival is a sample project that uses the Content Delivery API in a headle
 
 # Contributing
 Thanks for your interest in contributing! There are many ways to contribute to this project. Get started [here](./CONTRIBUTING.md).
+
+# Special thanks
+[Ted&Gustaf](https://github.com/tedgustaf) for providing [GoogleMapsEditor](https://github.com/tedgustaf/optimizely-google-maps-editor/) which has inspired this project.<br/>
+[Leaflet](https://leafletjs.com/) for providing the Leaflet map library.<br/>
+[OpenStreetMap](https://www.openstreetmap.org/) for providing free and reliable map data.<br/>
+[MightyLittleGeodesy](https://github.com/bjornsallarp/MightyLittleGeodesy) for providing an open source library to convert coordinate systems<br/>
+All of these projects are outstanding in their own right and have greatly contributed to the development of this project.
