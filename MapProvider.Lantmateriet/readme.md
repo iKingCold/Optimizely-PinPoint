@@ -1,12 +1,11 @@
 # PinPoint for Optimizely
-Map widget for setting coordinates in Optimizely CMS using Lantm‰teriet maps.
+Map widget for setting coordinates in Optimizely CMS using Lantm√§teriet maps.
 
 ## Pictures
-
-<img src="https://github.com/preciofishbone/Optimizely-PinPoint/tree/main/Pictures/Ekens-lantmateriet-bild2.png" width="800">
+<img src="https://raw.githubusercontent.com/preciofishbone/Optimizely-PinPoint/refs/heads/main/Pictures/Ekens-lantmateriet-bild2.png" width="800">
 
 ## Prerequisites
-### - API-Key from Lantm‰teriet
+### - API-Key from Lantm√§teriet
 
 ## Getting started
 
@@ -21,7 +20,7 @@ public class Startup
         _configuration = configuration;
     }
 	
-	public void ConfigureServices(IServiceCollection services)
+    public void ConfigureServices(IServiceCollection services)
     {
         services.AddEditorMapWidget(_configuration);
     }
@@ -45,13 +44,13 @@ public class Startup
     "DefaultZoom": "10",
     "MaxZoom": "17",
     "MinZoom": "8",
-    "MapProviderName": "Lantm‰teriet"
+    "MapProviderName": "Lantm√§teriet"
   },
 ```
 
 ### 3.  Add a property of type MapsCoordinates or RequiredMapsCoordinates to a Page- or BlockType.
-    RequiredMapsCoordinates requires that coordinates are set before the content can be published. 
-    MapsCoordinates allows content to be published without coordinates being set. Example:
+RequiredMapsCoordinates requires that coordinates are set before the content can be published. 
+MapsCoordinates allows content to be published without coordinates being set. Example:
 ```csharp    
     public virtual MapsCoordinates Map { get; set; }
 ```
