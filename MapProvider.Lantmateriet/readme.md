@@ -20,7 +20,7 @@ public class Startup
         _configuration = configuration;
     }
 	
-	public void ConfigureServices(IServiceCollection services)
+    public void ConfigureServices(IServiceCollection services)
     {
         services.AddEditorMapWidget(_configuration);
     }
