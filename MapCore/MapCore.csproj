@@ -60,7 +60,7 @@
 			<Pack>True</Pack>
 			<PackagePath></PackagePath>
 		</None>
-		<None Include="MapCore.targets">
+		<None Include="PF.Optimizely.PinPoint.Core.targets">
 			<Pack>True</Pack>
 			<PackagePath>build\net6.0</PackagePath>
 		</None>

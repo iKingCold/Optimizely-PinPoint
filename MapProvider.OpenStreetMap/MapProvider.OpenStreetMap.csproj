@@ -54,7 +54,7 @@
 			<Pack>True</Pack>
 			<PackagePath></PackagePath>
 		</None>
-		<None Include="buildTransitive\PinPoint.Provider.OpenStreetMap.props">
+		<None Include="buildTransitive\PF.Optimizely.PinPoint.Provider.OpenStreetMap.props">
 			<Pack>True</Pack>
 			<PackagePath>buildTransitive\net6.0</PackagePath>
 		</None>
