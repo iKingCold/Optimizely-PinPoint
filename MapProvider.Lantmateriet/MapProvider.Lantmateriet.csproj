@@ -25,7 +25,8 @@
 		<Version>$(FileVersion)</Version>
 		<PackageVersion>$(FileVersion)</PackageVersion>
 
-		<Authors>AxelCalas, simon-s-99, BrogrenAnna</Authors>
+		<Authors>Precio Fishbone AB</Authors>
+		<Owners>Precio Fishbone AB</Owners>
 		<Copyright>© Precio Fishbone AB</Copyright>
 
 		<PackageProjectUrl>https://github.com/preciofishbone/pf-optimizely-pinpoint</PackageProjectUrl>

@@ -4,7 +4,7 @@
   <!-- Adds MapCore as a direct dependency to the consuming project -->
 
   <ItemGroup>
-    <PackageReference Include="PinPoint.Core" Version="1.0.*" />
+    <PackageReference Include="PF.Optimizely.PinPoint.Core" Version="1.0.*" />
   </ItemGroup>
 
 </Project>

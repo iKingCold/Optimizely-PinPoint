@@ -22,7 +22,8 @@
 		<Version>$(FileVersion)</Version>
 		<PackageVersion>$(FileVersion)</PackageVersion>
 		<PackageId>PF.Optimizely.PinPoint.Core</PackageId>
-		<Authors>AxelCalas, simon-s-99, BrogrenAnna</Authors>
+		<Authors>Precio Fishbone AB</Authors>
+		<Owners>Precio Fishbone AB</Owners>
 		<Copyright>© Precio Fishbone AB</Copyright>
 		<PackageProjectUrl>https://github.com/preciofishbone/pf-optimizely-pinpoint</PackageProjectUrl>
 		<RepositoryUrl>https://github.com/preciofishbone/pf-optimizely-pinpoint</RepositoryUrl>
