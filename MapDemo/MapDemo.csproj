@@ -22,6 +22,7 @@
   
   <ItemGroup>
     <ProjectReference Include="..\MapProvider.Lantmateriet\MapProvider.Lantmateriet.csproj" />
+    <ProjectReference Include="..\MapProvider.OpenStreetMap\MapProvider.OpenStreetMap.csproj" />
   </ItemGroup>
   
 </Project>
