@@ -9,28 +9,6 @@
 		<BinDir>$(ProjectDir)bin</BinDir>
 		<ObjDir>$(ProjectDir)obj</ObjDir>
 	</PropertyGroup>
-	
-	<!-- Creates a ZIP file containing a specified set of files -->
-	<UsingTask TaskName="ZipDirectory" TaskFactory="CodeTaskFactory" AssemblyFile="$(MSBuildToolsPath)\Microsoft.Build.Tasks.v4.0.dll">
-		<ParameterGroup>
-			<InputPath ParameterType="System.String" Required="true" />
-			<OutputFileName ParameterType="System.String" Required="true" />
-			<OverwriteExistingFile ParameterType="System.Boolean" Required="false" />
-		</ParameterGroup>
-		<Task>
-			<Reference Include="System.IO.Compression.FileSystem" />
-			<Using Namespace="System.IO" />
-			<Using Namespace="System.IO.Compression" />
-			<Code Type="Fragment" Language="cs">
-				<![CDATA[        
-          if(this.OverwriteExistingFile) {
-            File.Delete(this.OutputFileName);
-          }
-          ZipFile.CreateFromDirectory(this.InputPath, this.OutputFileName);
-        ]]>
-			</Code>
-		</Task>
-	</UsingTask>
 
 	<Target Name="Clean" AfterTargets="AfterClean">
 		<Message Text="Cleaning project..." Importance="high" />
@@ -77,9 +55,9 @@
 		
 		<MakeDir Directories="$(SolutionDir)\tmp" />
 		
-		<ZipDirectory InputPath="$(TmpOutDir)\content" 
-					  OutputFileName="$(SolutionDir)\tmp\$(PluginName).zip" 
-					  OverwriteExistingFile="true" />
+		<ZipDirectory SourceDirectory="$(TmpOutDir)\content" 
+					  DestinationFile="$(SolutionDir)\tmp\$(PluginName).zip" 
+					  Overwrite="true" />
 
 	</Target>
 
