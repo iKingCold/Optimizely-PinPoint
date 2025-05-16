@@ -60,9 +60,11 @@
 			<Pack>True</Pack>
 			<PackagePath></PackagePath>
 		</None>
-		<None Include="PF.Optimizely.PinPoint.Core.targets">
+		<None Include="MapCore.targets">
 			<Pack>True</Pack>
-			<PackagePath>build\net6.0</PackagePath>
+      		<PackageCopyToOutput>True</PackageCopyToOutput>
+			<BuildAction>None</BuildAction>
+			<PackagePath>build\net6.0\$(PackageId).targets</PackagePath>
 		</None>
 		<None Include="BuildAddonZipFile.proj" />
 		<None Include="..\Pictures\icon.png" Pack="true" PackagePath="" />

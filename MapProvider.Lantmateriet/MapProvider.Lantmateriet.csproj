@@ -54,10 +54,6 @@
 			<Pack>True</Pack>
 			<PackagePath></PackagePath>
 		</None>
-		<None Include="buildTransitive\PF.Optimizely.PinPoint.Provider.Lantmateriet.props">
-			<Pack>True</Pack>
-			<PackagePath>buildTransitive\net6.0</PackagePath>
-		</None>
 		<None Include="..\Pictures\icon.png" Pack="true" PackagePath="" />
 	</ItemGroup>
 
@@ -66,7 +62,10 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<ProjectReference Include="..\MapCore\MapCore.csproj" />
+		<ProjectReference Include="..\MapCore\MapCore.csproj">
+			<IncludeAssets>All</IncludeAssets>
+			<PrivateAssets>None</PrivateAssets>
+		</ProjectReference>
 	</ItemGroup>
 
 </Project>
