@@ -21,15 +21,15 @@
 		<PackageDescription>$(Description)</PackageDescription>
 		<PackageTags>maps;coordinates;api;leaflet;optimizely;episerver;lantmateriet;mapdata</PackageTags>
 
-		<PackageId>PinPoint.Provider.Lantmateriet</PackageId>
+		<PackageId>PF.Optimizely.PinPoint.Provider.Lantmateriet</PackageId>
 		<Version>$(FileVersion)</Version>
 		<PackageVersion>$(FileVersion)</PackageVersion>
 
 		<Authors>AxelCalas, simon-s-99, BrogrenAnna</Authors>
 		<Copyright>© Precio Fishbone AB</Copyright>
 
-		<PackageProjectUrl>https://github.com/iKingCold/Optimizely-PinPoint</PackageProjectUrl>
-		<RepositoryUrl>https://github.com/iKingCold/Optimizely-PinPoint</RepositoryUrl>
+		<PackageProjectUrl>https://github.com/preciofishbone/pf-optimizely-pinpoint</PackageProjectUrl>
+		<RepositoryUrl>https://github.com/preciofishbone/pf-optimizely-pinpoint</RepositoryUrl>
 
 		<PackageIcon>icon.png</PackageIcon>
 		<PackageReadmeFile>README.md</PackageReadmeFile>

@@ -21,11 +21,11 @@
 		<PackageDescription>$(Description)</PackageDescription>
 		<Version>$(FileVersion)</Version>
 		<PackageVersion>$(FileVersion)</PackageVersion>
-		<PackageId>PinPoint.Core</PackageId>
+		<PackageId>PF.Optimizely.PinPoint.Core</PackageId>
 		<Authors>AxelCalas, simon-s-99, BrogrenAnna</Authors>
 		<Copyright>© Precio Fishbone AB</Copyright>
-		<PackageProjectUrl>https://github.com/iKingCold/Optimizely-PinPoint</PackageProjectUrl>
-		<RepositoryUrl>https://github.com/iKingCold/Optimizely-PinPoint</RepositoryUrl>
+		<PackageProjectUrl>https://github.com/preciofishbone/pf-optimizely-pinpoint</PackageProjectUrl>
+		<RepositoryUrl>https://github.com/preciofishbone/pf-optimizely-pinpoint</RepositoryUrl>
 		<PackageLicenseFile>LICENSE</PackageLicenseFile>
 		<PackageIcon>icon.png</PackageIcon>
 		<PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
