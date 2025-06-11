@@ -12,7 +12,7 @@ Map widget for setting coordinates in Optimizely CMS using Lantmäteriet maps.
 ### 1. Install the Map Provider
 
 ```bash
-dotnet add package PinPoint.MapProvider.Lantmateriet
+dotnet add package PF.Optimizely.PinPoint.Provider.Lantmateriet
 ```
 
 ### 2.  Ensure your Startup class accepts IConfiguration in its constructor & register the Map Widget using IConfiguration:
