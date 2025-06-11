@@ -9,7 +9,13 @@ Map widget for setting coordinates in Optimizely CMS using Lantmäteriet maps.
 
 ## Getting started
 
-### 1.  Ensure your Startup class accepts IConfiguration in its constructor & register the Map Widget using IConfiguration:
+### 1. Install the Map Provider
+
+```bash
+dotnet add package PinPoint.MapProvider.Lantmateriet
+```
+
+### 2.  Ensure your Startup class accepts IConfiguration in its constructor & register the Map Widget using IConfiguration:
 ```csharp
 public class Startup
 {
@@ -27,7 +33,7 @@ public class Startup
 }
 ```
 
-### 2.  Add settings to appsettings.json, example:
+### 3.  Add settings to appsettings.json, example:
 ```json
   "MapSettings": {
     "BaseUrl": "https://localhost:8081",
@@ -48,7 +54,7 @@ public class Startup
   },
 ```
 
-### 3.  Add a property of type MapsCoordinates or RequiredMapsCoordinates to a Page- or BlockType.
+### 4.  Add a property of type MapsCoordinates or RequiredMapsCoordinates to a Page- or BlockType.
 RequiredMapsCoordinates requires that coordinates are set before the content can be published. 
 MapsCoordinates allows content to be published without coordinates being set. Example:
 ```csharp    

@@ -3,8 +3,8 @@ Map widget for setting coordinates in Optimizely CMS through map of choice with 
 
 ## Pictures
 <div>
-  <img src="https://github.com/preciofishbone/pf-optimizely-pinpoint/blob/main/Pictures/Lantmateriet-AutoComplete-1.png" width="400">
-  <img src="https://github.com/preciofishbone/pf-optimizely-pinpoint/blob/main/Pictures/OSM-AutoComplete-1.png" width="400">
+  <img src="Pictures/Lantmateriet-AutoComplete-1.png" width="400">
+  <img src="Pictures/OSM-AutoComplete-1.png" width="400">
 </div>
 
 ## Summary
@@ -16,15 +16,15 @@ The solution consists of 3 different project types.<br/>
 The project has been tested with **Optimizely Alloy**, **Optimizely Decoupled MusicFestival** & **Optimizely Empty Project**.
 MusicFestival is a sample project that uses the Content Delivery API in a headless CMS structure. https://github.com/episerver/musicfestival-vue-template
 
-# Option 1. Get started through NuGet
-1. Install the desired Map Provider `PinPoint.*provider*` through Nuget Package Manager to an existing Optimizely CMS project
-1. Add Maps API Credentials & desired default values to `appsettings.json` 
-1. Add the custom `MapsCoordinates` or `RequiredMapsCoordinates` property to a page- or blocktype
+# Get started
+1. Follow the specific Map Provider installation instructions:
+   - For [OpenStreetMap](MapProvider.OpenStreetMap)
+   - For [Lantmäteriet](MapProvider.Lantmateriet)
 1. Start the project and browse to the Optimizely UI, default: http://localhost:8081/Util/Login (or port 5000)
 1. Create a new page or block of the type that has the `MapsCoordinates` property
 1. Test the PinPoint widget in the editor view
 
-# Option 2. Get started through the repository
+# Dev setup
 1. Clone the repository
 1. Run the `create-database.bat` to create an empty database
 1. Open the solution and start the `MapDemo` project 
