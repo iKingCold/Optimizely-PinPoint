@@ -30,7 +30,7 @@
 		<PackageLicenseFile>LICENSE</PackageLicenseFile>
 		<PackageIcon>icon.png</PackageIcon>
 		<PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
-		<PackageReadmeFile>readme.md</PackageReadmeFile>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
 		<PackageTags>maps;coordinates;api;leaflet;optimizely;episerver</PackageTags>
 	</PropertyGroup>
 

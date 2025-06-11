@@ -3,8 +3,8 @@ Map widget for setting coordinates in Optimizely CMS through map of choice with 
 
 ## Pictures
 <div>
-  <img src="https://github.com/iKingCold/Optimizely-PinPoint/blob/main/Pictures/Lantmateriet-AutoComplete-1.png" width="400">
-  <img src="https://github.com/iKingCold/Optimizely-PinPoint/blob/main/Pictures/OSM-AutoComplete-1.png" width="400">
+  <img src="https://github.com/preciofishbone/pf-optimizely-pinpoint/blob/main/Pictures/Lantmateriet-AutoComplete-1.png" width="400">
+  <img src="https://github.com/preciofishbone/pf-optimizely-pinpoint/blob/main/Pictures/OSM-AutoComplete-1.png" width="400">
 </div>
 
 ## Summary
