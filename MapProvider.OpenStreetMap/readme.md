@@ -9,7 +9,7 @@ Map widget for setting coordinates in Optimizely CMS using OpenStreetMap maps.
 ### 1. Install the Map Provider
 
 ```bash
-dotnet add package PinPoint.MapProvider.OpenStreetMap
+dotnet add package PF.Optimizely.PinPoint.Provider.OpenStreetMap
 ```
 
 ### 2. Ensure your Startup class accepts IConfiguration in its constructor & register the Map Widget using IConfiguration:
