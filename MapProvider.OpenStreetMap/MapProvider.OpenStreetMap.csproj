@@ -6,7 +6,7 @@
 		<ImplicitUsings>disable</ImplicitUsings>
 		<OutputType>Library</OutputType>
 		<GenerateAssemblyInfo>false</GenerateAssemblyInfo>
-		<FileVersion>1.0.0</FileVersion>
+		<FileVersion>1.0.1</FileVersion>
 
 		<InformationalVersion>Optimizely CMS 12</InformationalVersion>
 		<Title>PinPoint for Optimizely, Map-data Provider</Title>
